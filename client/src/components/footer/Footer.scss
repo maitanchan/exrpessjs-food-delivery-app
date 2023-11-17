@@ -1,0 +1,97 @@
+.footer {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(6, 6, 6, 0.742);
+    opacity: 0.7; // Điều chỉnh độ trong suốt của background-color tùy theo nhu cầu
+    z-index: -1; // Đảm bảo nó nằm dưới nội dung chính
+  }
+
+  // Các thiết lập CSS khác cho .navbar
+  background-image: url('../../../public/img/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent; // Đặt background-color này thành transparent
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  transition: 0.5s all ease;
+
+  img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .container {
+    width: 1400px;
+    .top {
+      display: flex;
+      justify-content: space-between;
+      .item {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        gap: 20px;
+        h2 {
+          font-size: 16px;
+          color: #ffffff;
+        }
+        span {
+          font-weight: 300;
+        }
+      }
+    }
+
+    hr {
+      margin: 50px 0px;
+      height: 0;
+      border: 1px solid #ebe9e9;
+    }
+    .bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      bottom: 20px;
+
+      .left {
+        width: max-content;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        span {
+          font-size: 13px;
+          white-space: nowrap;
+        }
+      }
+      .right {
+        width: max-content;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+
+        .social {
+          display: flex;
+          gap: 20px;
+        }
+
+        .link {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+        }
+      }
+    }
+  }
+}

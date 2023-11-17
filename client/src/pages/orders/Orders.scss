@@ -1,0 +1,58 @@
+.orders {
+  display: flex;
+  justify-content: center;
+  color: #000000;
+
+  .container {
+    width: 1300px;
+    padding: 50px 0px;
+
+    .title {
+      display: flex;
+      justify-content: space-between;
+
+      button {
+        background-color: #1dbf73;
+        color: white;
+        font-weight: 500;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+      }
+    }
+
+    table {
+      width: 100%;
+
+      tr {
+        height: 50px;
+        th {
+          text-align: center;
+        }
+        td {
+          text-align: center;
+          
+          sup{
+            font-size: 12px;
+          }
+
+          .image {
+            width: 130px;
+            height: 105px;
+            object-fit: cover;
+            border-radius: 5px;
+
+          }
+
+          .message {
+            width: 70px;
+            cursor: pointer;
+          }
+        }
+        &:nth-child(even) {
+          background-color: #1dbf730f;
+        }
+      }
+    }
+  }
+}
